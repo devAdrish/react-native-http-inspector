@@ -1,6 +1,6 @@
 {
   "name": "react-native-http-inspector",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "In-app HTTP inspector for React Native. Inspect requests, responses, headers and JSON payloads on device. Zero deps.",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
