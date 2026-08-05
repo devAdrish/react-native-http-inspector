@@ -241,7 +241,3 @@ yarn example ios     # or: yarn example android
 ## License
 
 MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)

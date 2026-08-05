@@ -9888,10 +9888,8 @@ __metadata:
     turbo: "npm:^2.9.16"
     typescript: "npm:^6.0.3"
   peerDependencies:
-    "@react-native-clipboard/clipboard": ">=1.11.0"
     react: "*"
     react-native: "*"
-    react-native-mmkv: ">=2.0.0"
   languageName: unknown
   linkType: soft
 
