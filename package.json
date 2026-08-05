@@ -1,12 +1,12 @@
 {
   "name": "react-native-http-inspector",
   "version": "0.1.0",
-  "description": "In-app network inspector for React Native. Drop-in UI to view HTTP requests and responses, with an interactive JSON tree for payloads.",
+  "description": "In-app HTTP inspector for React Native. Inspect requests, responses, headers and JSON payloads on device. Zero deps.",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
   "exports": {
     ".": {
-      "react-native-http-inspector-source": "./src/index.tsx",
+      "react-native-http-inspector-source": "./src/index.ts",
       "types": "./lib/typescript/src/index.d.ts",
       "default": "./lib/module/index.js"
     },
@@ -15,17 +15,6 @@
   "files": [
     "src",
     "lib",
-    "android",
-    "ios",
-    "cpp",
-    "*.podspec",
-    "react-native.config.js",
-    "!ios/build",
-    "!android/build",
-    "!android/gradle",
-    "!android/gradlew",
-    "!android/gradlew.bat",
-    "!android/local.properties",
     "!**/__tests__",
     "!**/__fixtures__",
     "!**/__mocks__",
@@ -33,7 +22,7 @@
   ],
   "scripts": {
     "example": "yarn workspace react-native-http-inspector-example",
-    "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
+    "clean": "del-cli example/android/build example/android/app/build example/ios/build lib",
     "prepare": "bob build",
     "typecheck": "tsc",
     "test": "jest",
@@ -58,16 +47,22 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
   "devDependencies": {
     "@commitlint/config-conventional": "^21.0.2",
     "@eslint/compat": "^2.1.0",
     "@eslint/eslintrc": "^3.3.5",
     "@eslint/js": "^10.0.1",
     "@jest/globals": "^29.7.0",
+    "@react-native-clipboard/clipboard": "^1.16.3",
     "@react-native/babel-preset": "0.85.0",
     "@react-native/eslint-config": "0.85.0",
     "@react-native/jest-preset": "0.85.0",
     "@release-it/conventional-changelog": "^11.0.1",
+    "@types/jest": "^30.0.0",
     "@types/react": "^19.2.0",
     "commitlint": "^21.0.2",
     "del-cli": "^7.0.0",
@@ -84,10 +79,6 @@
     "release-it": "^20.2.0",
     "turbo": "^2.9.16",
     "typescript": "^6.0.3"
-  },
-  "peerDependencies": {
-    "react": "*",
-    "react-native": "*"
   },
   "workspaces": [
     "example"

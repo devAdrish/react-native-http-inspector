@@ -44,6 +44,9 @@ android.iml
 # Cocoapods
 #
 example/ios/Pods
+# The example app is test scaffolding, not a shipped app — pinning pods here just
+# causes conflicts when contributors are on a different RN patch.
+example/ios/Podfile.lock
 
 # Ruby
 example/vendor/
