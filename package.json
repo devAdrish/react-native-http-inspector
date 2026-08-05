@@ -31,8 +31,25 @@
   },
   "keywords": [
     "react-native",
+    "react",
     "ios",
-    "android"
+    "android",
+    "http",
+    "network",
+    "network-inspector",
+    "network-logger",
+    "http-inspector",
+    "interceptor",
+    "xhr",
+    "fetch",
+    "debugging",
+    "devtools",
+    "debug",
+    "logger",
+    "json-viewer",
+    "json-tree",
+    "networking",
+    "developer-tools"
   ],
   "repository": {
     "type": "git",
